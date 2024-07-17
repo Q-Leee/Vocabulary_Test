@@ -68,10 +68,10 @@ int main() {
 				int r = rand() % v.size();
 				cout << v[r].geteng() << " ? " << endl;
 
-				vector<string> options;
+				vector<string> options;   //to store the answer of v[r].geteng() which is v[r].getSyn()
 				options.push_back(v[r].getSyn());
 
-				while (options.size() < 4)
+				while (options.size() < 4)   //till options.size() = 4, put random synonyms into options vector
 				{
 					int x = rand() % v.size();
 					auto it = find(options.begin(), options.end(), v[x].getSyn());
@@ -81,7 +81,7 @@ int main() {
 					}
 				}
 
-				random_shuffle(options.begin(), options.end());
+				random_shuffle(options.begin(), options.end());   //algorithm header, shuffle elements to avoid the same array
 
 				for (int i = 0; i < 4; i++)
 				{
@@ -93,7 +93,7 @@ int main() {
 
 				if (choice >= 1 && choice <= 4)
 				{
-					if (options[choice - 1] == v[r].getSyn())
+					if (options[choice - 1] == v[r].getSyn())   //choice will be 1~4 but index starts from 0
 					{
 						cout << "Excellent !!" << endl;
 					}
