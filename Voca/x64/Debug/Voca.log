@@ -1,0 +1,5 @@
+﻿  main.cpp
+C:\Users\gudrb\source\repos\Vocabulary_Test\Voca\main.cpp(34,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Word.cpp
+  Generating Code...
+  Voca.vcxproj -> C:\Users\gudrb\source\repos\Vocabulary_Test\x64\Debug\Voca.exe
